@@ -1,0 +1,43 @@
+@import '../../shared/material-drop-shadows.styl';
+
+.display
+  box-sizing: border-box;
+
+  display flex
+  flex-flow column nowrap
+
+  width 100%
+  height 150px
+
+  padding 5px
+
+  background #fff
+
+  @extend .shadow-3dp
+
+.displayShared
+  display flex
+  justify-content flex-end
+  align-items flex-end
+  width 100%
+  overflow hidden
+
+
+  font-family 'Roboto',sans-serif
+
+
+.mainDisplay
+  @extend .displayShared
+  flex-grow 1.5
+
+  font-size 3em
+
+  border 1px solid red
+
+.subDisplay
+  @extend .displayShared
+  flex-grow 1
+
+  font-size 1.5em
+
+  border 1px solid blue
